@@ -24,3 +24,7 @@ read -p "Press <enter> to continue."
 
 #firefox http://www.411.com/name/$fname-$lname/ &
 firefox http://www.cvgadget.com/person/$fname/$lname &
+#firefox -new-tab http://peekyou.com/$fname_$lname
+#http://pipl.com
+#phonenumbers.addresses.com/people/$fname+$lname
+
