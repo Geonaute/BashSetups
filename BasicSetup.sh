@@ -19,4 +19,5 @@ echo -n "First Name: "
 read fname
 echo -n "Last Name: "
 read lname
-echo $fname
+#echo $fname $lname
+firefox http://www.411.com/name/$fname-$lname/
