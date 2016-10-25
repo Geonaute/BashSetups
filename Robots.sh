@@ -1,6 +1,7 @@
 #!/usr/bin/bash
 
 echo "-- Invoking Robots Daemon --"
+rm robots.txt 2>/dev/null
 echo
 break="======================================"
 echo 
@@ -19,5 +20,6 @@ echo $break
 #awk example
 cat robots.txt | grep 'Disallow' | awk '{print $2}' > tmp
 
+cat tmp
 #cut example
 # cat robots.txt | grep 'Disallow' | cut -d ' ' -f2 > tmp
