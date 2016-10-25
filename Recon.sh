@@ -22,9 +22,14 @@ echo "Good Job. Starting on $fname $lname."
 echo
 read -p "Press <enter> to continue."
 
-#firefox http://www.411.com/name/$fname-$lname/ &
-firefox http://www.cvgadget.com/person/$fname/$lname &
-#firefox -new-tab http://peekyou.com/$fname_$lname
-#http://pipl.com
+firefox &
+sleep 2
+firefox -new-tab http://www.411.com/name/$fname-$lname/ 
+firefox -new-tab http://www.cvgadget.com/person/$fname/$lname 
+firefox -new-tab https://pipl.com/search/?q=$fname+$lname
+firefox -new-tab http://www.peekyou.com/$fname_$lname
+firefox -new-tab http://www.spokeo.com/search?q=$fname+$lname
+firefox -new-tab http://www.zabasearch.com/people/$fname+$lname/
+
 #phonenumbers.addresses.com/people/$fname+$lname
 
