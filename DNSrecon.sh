@@ -13,7 +13,6 @@ fi
 echo
 echo "Good Job. Starting on $dnsname..."
 echo
-read -p "Press <enter> to continue."
 
 firefox &
 sleep 2

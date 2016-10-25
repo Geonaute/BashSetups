@@ -20,16 +20,20 @@ if [ -z $lname ];then
 fi
 echo "Good Job. Starting on $fname $lname."
 echo
-read -p "Press <enter> to continue."
-
+#invoke firefox and sleep
 firefox &
 sleep 2
-firefox -new-tab http://www.411.com/name/$fname-$lname/ 
-firefox -new-tab http://www.cvgadget.com/person/$fname/$lname 
-firefox -new-tab https://pipl.com/search/?q=$fname+$lname
-firefox -new-tab http://www.peekyou.com/$fname_$lname
-firefox -new-tab http://www.spokeo.com/search?q=$fname+$lname
-firefox -new-tab http://www.zabasearch.com/people/$fname+$lname/
+firefox -new-tab http://www.411.com/name/$fname-$lname/ &
+sleep1
+firefox -new-tab http://www.cvgadget.com/person/$fname/$lname &
+sleep1
+firefox -new-tab https://pipl.com/search/?q=$fname+$lname &
+sleep1
+firefox -new-tab http://www.peekyou.com/$fname_$lname &
+sleep1
+firefox -new-tab http://www.spokeo.com/search?q=$fname+$lname &
+sleep1
+firefox -new-tab http://www.zabasearch.com/people/$fname+$lname/ &
+sleep1
 
 #phonenumbers.addresses.com/people/$fname+$lname
-

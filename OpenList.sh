@@ -18,8 +18,16 @@ fi
 echo
 echo "Good Job. Starting on $openlist..."
 
-#firefox &
-#sleep 2
+
+firefox &
+sleep 2
+
+# Read list and open each in a new tab
+for i in $(cat $openlist); do
+	firefox -new-tab $i &
+	sleep 1
+done	
+
 #firefox -new-tab http://$openlist &
 
 

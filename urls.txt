@@ -1,0 +1,4 @@
+google.com
+facebook.com
+www.v6.facebook.com
+ipv6.google.com
