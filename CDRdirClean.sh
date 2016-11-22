@@ -23,4 +23,8 @@ echo -n "Type Month of the records for archive: "
 read archiveName
 echo $archiveName
 tar cvzf $archiveName.tar.gz cdr*
+tar cvzf $archiveName.output.tar.gz output.csv
 mv $archiveName.tar.gz Archive/
+echo "MOVED"
+echo
+#rm cdr*
